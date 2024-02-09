@@ -18,7 +18,7 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { ThemeSwitch } from "@/components/theme-switch";
+// import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	TwitterIcon,
 	GithubIcon,
@@ -60,8 +60,6 @@ export const Navbar = () => {
 						<p className="font-bold text-inherit">FFREED</p>
 					</NextLink>
 				</NavbarBrand>
-				<ul className="hidden lg:flex gap-4 justify-start ml-2">
-				</ul>
 			</NavbarContent>
 
 			<NavbarContent
@@ -78,7 +76,7 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
 					</Link>
-					<ThemeSwitch />
+					{/* <ThemeSwitch /> */}
 				</NavbarItem>
 			</NavbarContent>
 
@@ -92,7 +90,7 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
 					</Link>
-				<ThemeSwitch />
+				{/* <ThemeSwitch /> */}
 			</NavbarContent>
 
 		</NextUINavbar>
